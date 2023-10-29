@@ -1,0 +1,37 @@
+.dot {
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    background-color:  rgba(81, 38, 119, 0.506);
+    border-radius: 50%;
+    margin: 5px;
+    transition:0.5s;
+}
+@media screen and (max-width: 540px) {
+    .dot {
+        background-color: rgba(234, 208, 12, 0.887);
+    }
+}
+
+.line {
+    width: 2px;
+    height: 10vh; /* Adjust the height as needed */
+    background-color: #c0b5a7;
+    
+}
+.dot:hover{
+    width: 0.75rem;
+    height: 0.75rem;
+
+}
+.dot.active{
+    opacity: 0.8;
+    border: none;
+    width: 0.5rem;
+    height:5rem;
+    background-color: antiquewhite
+}
+.container{
+    margin-left: 4px;
+}
+ 

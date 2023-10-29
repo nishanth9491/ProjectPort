@@ -1,0 +1,30 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    background: transparent;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color : black;
+    color:white;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.Main{
+    display: flex;
+   
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+    position: fixed;
+    top:30%;
+    left: 2vw;
+}
+
+

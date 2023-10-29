@@ -1,0 +1,141 @@
+#contactPage{
+    min-height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.contactPageTitle{
+    font-size: 5rem;
+}
+.contactDesc{
+    color: antiquewhite;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.contactForm{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+.msg{
+    min-height:20vh;
+}
+.msg{
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: rgb(10, 10, 10);
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(207, 207, 187);
+
+}
+.name:active,.name:focus ,.email:active,.email:focus,.msg:active,.msg:focus{
+    border: 3px solid rgb(51, 46, 46);
+    box-shadow: 5px 5px 70px rgb(117, 109, 95);
+}
+.submitBtn{
+    background-color:rgb(165, 143, 147);
+    border: none;
+    padding: 0.75rem 3.5rem;
+    color: black;
+    border-radius: 5rem;
+    margin: 2rem;
+    transition: 0.1s;
+}
+.btnText{
+    color:bisque ;
+    font-size: 1rem;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.clientImg
+{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 1rem;
+    filter: grayscale(30%);
+    transition: 0.5s;
+    border-radius: 5rem;
+  
+
+}
+.clientImg:hover{
+    
+ 
+  
+   box-shadow: 1rem 1rem 70px rgb(101, 101, 91);
+    filter: grayscale(50%);
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactProgress{
+    background-color: white;
+    height: 10rem;
+    width: 1rem;
+    display: flex;
+}
+.clientImg:hover{
+    width:4rem;
+   
+}
+.clientImg:active{
+    height:4rem;
+
+}
+
+@media screen and (max-width:700px) {
+    .email,.name,.msg{
+        width: 80%;
+    }
+    .contactPageTitle{
+        font-size: 2.5rem;
+    }
+    .contactDesc{
+        font-size: 1rem;
+    }
+   
+}
+
+.buttonSend{
+    display: flex;
+
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.sendTime{
+    opacity: 0;
+    transition: all 1s;
+}
+.newSendTime{
+    opacity: 1;
+}

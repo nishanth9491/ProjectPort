@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./logo.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Nishanth's portfolio" />
+    <title>Nishanth</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fuggles&family=Poppins:wght@200;300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/components/Scroll/scroll.css" />
+    <script src="../src/components/Scroll/scroll.js"></script>
+  </head>
+  <body>
+    <div class="Main">
+      <div id="root"></div>
+    </div>
+    <script>
+      // Define toggleColor as a global function
+      window.toggleColor = function (element, className) {
+        const target = document.getElementById(className);
+        if (element.classList.contains("highlighted")) {
+          element.classList.remove("highlighted");
+          target.scrollIntoView({ behavior: "smooth" });
+        } else {
+          const highlightedDots = document.querySelectorAll(".dot.highlighted");
+          for (const dot of highlightedDots) {
+            dot.classList.remove("highlighted");
+          }
+          element.classList.add("highlighted");
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      };
+    </script>
+  </body>
+</html>

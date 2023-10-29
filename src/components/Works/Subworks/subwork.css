@@ -1,0 +1,43 @@
+.subwork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem auto;
+   
+    margin-top: -5rem;
+}
+.subworkBtn{
+    background-color: antiquewhite;
+    padding: 1% 1rem;
+    border-radius: 2rem;
+    margin: 1rem 0;
+
+}
+
+.transition-element {
+  margin-top: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+  transition: 0.5s;
+  letter-spacing:0.25rem;
+
+}
+
+.transition-element.visible {
+
+  font-size: larger;
+  letter-spacing:0.4rem;
+  padding: 0.5rem;
+  opacity: 1;
+  visibility: visible;
+}
+@media screen and (max-width:540px) {
+.transition-element{
+  margin-left: 1rem;
+  letter-spacing: 0.5rem;
+}  
+}
