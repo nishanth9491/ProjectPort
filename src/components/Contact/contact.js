@@ -60,12 +60,12 @@ const Contact = () => {
     document.querySelector('.submitBtn').classList.add("Thanks");
     setTimeout(() => {
       document.querySelector('.btnText').innerHTML = "Send";
-    }, 500);
+    }, 1000);
   }}
 >
   <p className='btnText'>Send</p>
 </button>
-<h1 className='sendTime' >{k}</h1>
+<h1 className='sendTime' ></h1>
 </div>
 
 
