@@ -4,7 +4,7 @@ import logo from '../../assests/Images/logo.jpeg';
 import contactImg from '../../assests/Images/contact.png';
 import menu from '../../assests/Images/menu.png';
 // import btnImge from '../../assests/Images/hireme.png';
-import {Link} from 'react';
+import {Link} from 'react-scroll';
 
 const Navbar=()=> {
 
